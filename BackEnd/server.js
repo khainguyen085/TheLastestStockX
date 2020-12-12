@@ -1,4 +1,5 @@
 import express from 'express'
+import path from 'path'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import colors from 'colors'
@@ -20,13 +21,21 @@ app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 
-app.get('/', (req, res) => {
-  res.send('API is running...')
-})
-
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 )
+
+const __dirname = path.resolve()
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '/FrontEnd/build')))
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve(__dirname, 'FrontEnd', 'build', 'index.html'))
+  )
+} else {
+  app.get('/', (req, res) => {
+    res.send('API is running...')
+  })
+}
 app.use(notFound)
 
 app.use(errorHandler)
