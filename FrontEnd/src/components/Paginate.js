@@ -7,7 +7,7 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {
   console.log('page:', page)
   return (
     pages > 1 && (
-      <Pagination>
+      <Pagination className='PaginModify'>
         {[...Array(pages).keys()].map((x) => (
           <LinkContainer
             key={x + 1}

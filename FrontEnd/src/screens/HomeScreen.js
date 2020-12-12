@@ -7,6 +7,7 @@ import Paginate from '../components/Paginate'
 import { useDispatch, useSelector } from 'react-redux'
 import { listProducts } from '../actions/productActions'
 import TopBackground from '../components/TopBackground'
+import StickyFooter from '../components/StickyFooter'
 
 const Homescreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -15,7 +16,7 @@ const Homescreen = ({ match }) => {
   const dispatch = useDispatch()
 
   const productList = useSelector((state) => state.productList)
-  const { loading, error, products, page, pages } = productList
+  const { loading, error, products, page, pages, productsFull } = productList
 
   useEffect(() => {
     dispatch(listProducts(keyword, pageNumber))
@@ -27,9 +28,9 @@ const Homescreen = ({ match }) => {
         <Loader />
       ) : error ? (
         <Message variant='danger'>{error}</Message>
-      ) : ( 
+      ) : (
         <>
-        <TopBackground/>
+          <TopBackground />
           <Row>
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
@@ -42,6 +43,7 @@ const Homescreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ''}
           />
+          <StickyFooter products={products} productsFull={productsFull} />
         </>
       )}
     </>

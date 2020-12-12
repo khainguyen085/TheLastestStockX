@@ -18,13 +18,13 @@ import StickyFooter from './components/StickyFooter'
 import { useDispatch, useSelector } from 'react-redux'
 const App = () => {
   const productList = useSelector((state) => state.productList)
-  const { products } = productList
+  const { products, productsFull } = productList
   return (
     <Router>
       <Header />
       <main className='py-3'>
         {/* <TopBackground/> */}
-        <Container style={{marginTop:"40px"}}>
+        <Container style={{ marginTop: '40px' }}>
           <Route path='/order/:id' component={OrderScreen} />
           <Route path='/shipping' component={ShippingScreen} />
           <Route path='/payment' component={PaymentScreen} />
@@ -44,7 +44,6 @@ const App = () => {
           <Route path='/' component={HomeScreen} exact />
         </Container>
       </main>
-      <StickyFooter products={products}/>
       {/* <Footer /> */}
     </Router>
   )
