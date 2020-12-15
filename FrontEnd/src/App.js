@@ -13,8 +13,6 @@ import ShippingScreen from './screens/ShippingScreen'
 import PaymentScreen from './screens/PaymentScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
 import OrderScreen from './screens/OrderScreen'
-import TopBackground from './components/TopBackground'
-import StickyFooter from './components/StickyFooter'
 import { useDispatch, useSelector } from 'react-redux'
 const App = () => {
   const productList = useSelector((state) => state.productList)
@@ -44,7 +42,7 @@ const App = () => {
           <Route path='/' component={HomeScreen} exact />
         </Container>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   )
 }

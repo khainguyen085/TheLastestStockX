@@ -120,7 +120,7 @@ const products = [
     numReviews: 22,
   },
   {
-    name: "YEEZY BOOST 350 V2 'BRED'",
+    name: "ADIDAS YEEZY BOOST 350 V2 'BRED'",
     image: '/images/adidas1.1.jpg',
     description:
       "The Yeezy Boost 350 V2 'Bred' brings a classic colorway to its minimalist construction. The shoe's upper is built with Primeknit, finished in black and highlighted by the SPLY-350 branding on the side wall. More red marks the heel pull-loop, while rope laces secure the fit. Underfoot, a full-length Boost midsole wrapped in a black rubber cage provides cushioning. A rubber outsole with cutouts provides traction.",
@@ -132,7 +132,7 @@ const products = [
     numReviews: 24,
   },
   {
-    name: "YEEZY 500 'UTILITY BLACK'",
+    name: "ADIDAS YEEZY 500 'UTILITY BLACK'",
     image: '/images/adidas1.2.jpg',
     description:
       "In July 2018, Kanye West and adidas released the Yeezy 500 ' Utility Black. ' The retro-inspired silhouette counterbalances a sleek, all-black design with its bulky form. What distinguishes this colorway from the standard triple-black finish is a unique use of tone – it's a semi-faded black that coats the combination of mesh and upper suede, as opposed to the pitch-black variety more common in the firmament of the sneaker.",
@@ -144,7 +144,7 @@ const products = [
     numReviews: 4,
   },
   {
-    name: "YEEZY BOOST 350 V2 'ZEBRA'",
+    name: "ADIDAS YEEZY BOOST 350 V2 'ZEBRA'",
     image: '/images/adidas1.3.jpg',
     description:
       "The Yeezy Boost 350 V2 ' Zebra ' released on February 25, 2017, combining an upper white / core black Primeknit with a red SPLY 350 branding and a full-length translucent midsole boost. On November 16, 2018, another restock of the ' Zebra ' arrived, with more pairs hitting the marketplace and building on Kanye's commitment to make Yeezy more available to anyone who wished to acquire them.",
@@ -156,7 +156,7 @@ const products = [
     numReviews: 4,
   },
   {
-    name: "YEEZY BOOST 350 V2 'CARBON'",
+    name: "ADIDAS YEEZY BOOST 350 V2 'CARBON'",
     image: '/images/adidas1.4.jpg',
     description:
       "The Yeezy Boost 350 V2 'Carbon' brings a neutral look to its classic construction. The shoe's upper is built with Primeknit, finished in a mix of black and grey woven into the design. A post-dyed monofilament stripe cuts through the side wall, while no-tie bungee laces support the fit. Underfoot, a rubber cage overlays the full-length Boost midsole, which provides cushioning.",

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 function StickyFooter({ products, productsFull }) {
   return (
-    <div className='footer'>
+    <div className='footer' style={{zIndex:"900"}}>
       <marquee behavior='left'>
         {productsFull.map((product) => (
           <Link

@@ -39,3 +39,116 @@ h2 {
 .edit {
   width: 100%;
 }
+.footerContainer{
+  width: 100%;
+}
+.topfooter{
+  height: 6rem;
+  background-color:slategrey;
+  display: flex;
+}
+.topfooter button{
+  width: auto;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-top:1.5rem;
+  margin-left:4rem;
+  border-radius:0.3rem;
+  border:0.1rem solid white;
+  background-color: slategrey;
+}
+.topfooter span{
+  border-right:1px solid white;
+  margin-right:0.5rem;
+  padding-right:0.4rem;
+  color:white;
+  margin-left:0.5rem;
+}
+#fixed{
+  border-right:none;
+}
+.iconfooter{
+  width: 15rem;
+  background-color:slategrey;
+  margin-left: 8rem;
+  padding: 2rem;
+}
+.iconfooter div{
+  width: 2.1rem;
+  float:left;
+  margin-left:0.6rem;
+}
+#phonefooter{
+  width: 10rem;
+  background-color: slategrey;
+  margin-left: 3rem;
+  padding: 2rem;
+}
+#phonefooter div{
+  width: 2.1rem;
+  float:left;
+  margin-left: 0.6rem;
+}
+#airjordandior{
+  width: 15rem;
+  background-color: slategrey;
+  margin-left: 5rem;
+  padding: 2rem;
+}
+#airjordandior div{
+  width: auto;
+  float:left;
+  margin-left: 1rem;
+  margin-top:0.5rem;
+}
+#airjordandior div a {
+  text-decoration: none;
+}
+.underfooter{
+  height: 11rem;
+  width: auto;
+  background-color: teal;
+}
+.leftunder{
+  width: 65rem;
+  /* background-color: slategrey; */
+}
+.top{
+  width: 60rem;
+  margin-left:3rem;
+  height:5rem;
+}
+.top div{
+  float:left;
+  border-left: 1px solid black;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin-top:2rem;
+  margin-left:1rem;
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+.top div a{
+  margin-left:0.51rem;
+}
+#helpfixed{
+  border:none;
+}
+.bottom{
+  width: 60rem;
+  margin-left:4.7rem;
+  background-color: steelblue;
+}
+.bottom div{
+  float:left;
+  width: 3rem;
+}
+.bottom div a{
+  text-decoration: underline;
+}
+.rightunder{
+  float:right;
+  font-size: 0.8rem;
+  padding-right: 2rem;
+  color:black;
+}
