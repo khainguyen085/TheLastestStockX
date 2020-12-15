@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 function StickyFooter({ products, productsFull }) {
-  console.log()
-
   return (
     <div className='footer'>
       <marquee behavior='left'>
@@ -10,6 +8,7 @@ function StickyFooter({ products, productsFull }) {
           <Link
             to={`/product/${product._id}`}
             style={{ textDecoration: 'none' }}
+            key={product._id}
           >
             <span style={{ paddingLeft: '40px', color: 'white' }}>
               {product.name}
